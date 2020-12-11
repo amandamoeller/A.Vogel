@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=da>
+
+<head>
+	<meta charset=utf-8>
+	<title>Naturlægemidler og kosttilskud - naturlægemiddel af friske planter | A. Vogel</title>
+	<meta content="A. Vogel yder professionel vejledning om vores naturlægemidler. Få også råd og vejledning til dine specifikke symptomer. Køb det med det samme i vores webshop." name=description>
+	<link href=css/styles.css rel=stylesheet>
+	<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js></script>
+	<!--https://developers.google.com/speed/libraries#jquery-->
+	<script>
+		$(window).scroll(function() {
+			$(".fade-in").each(function() {
+				var i = $(this).offset().top,
+					s = $(this).offset().top + $(this).outerHeight(),
+					o = $(window).scrollTop() + $(window).innerHeight(),
+					t = $(window).scrollTop();
+				o > i && s > t && !$(this).hasClass("is-visible") && $(this).addClass("is-visible")
+			})
+		})
+	</script>
+	<!--https://www.jiyuulife.net/fade-in-effect-on-scroll-into-view/#JavaScript/JQuery-->
+</head>
+
+<body>
+	<nav class=nav-container><a class=nav-link href=#>Produkter</a> <a class=nav-link href=#>Vejledning</a> <a class=nav-brand href=#><img alt="A. Vogel logo" src=img/logo.png></a><a class=nav-link href=#>Om Os</a> <a class=nav-link href=#>Kontakt</a> <a class=nav-menu href=#><img alt="A. Vogel logo" src=img/icon-menu.svg></a></nav>
+	<main>
+		<section class=intro>
+			<h1 class=intro-title>Forkølelsøssæson</h1>
+			<p class=intro-subtitle>Echinaforcesæson
+		</section>
+		<div class=teaser-images>
+			<picture>
+				<source media="(min-width: 768px)" srcset=img/echina-group.png><img alt="Echinaforce produkt emballage" src=img/echina-group-mobile.png>
+			</picture>
+		</div>
+		<div class=page-scroll><a class=page-scroll-icon href=#products><img alt="Chevron/arrow shape pointing downwards" src=img/icon-chevron.svg></a></div>
+		<section class=products id=products>
+			<h2 class="fade-in products-title">Echinaforce®</h2>
+			<div class="fade-in product-align-left"><img alt="Echinaforce dråber emballage" src=img/echina-drops.png>
+				<div class=product-caption-wrapper>
+					<h3 class=product-heading>Den Originale</h3>
+					<p class=product-caption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet neque ligula. Suspendisse potenti. Fusce vel nisl quis dolor efficitur porttitor.</p><a class=product-link href=#>Læs mere ›</a>
+				</div>
+			</div>
+			<div class="fade-in product-align-right">
+				<div class="product-caption-wrapper sm-hide">
+					<h3 class=product-heading>Hot Drink</h3>
+					<p class=product-caption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet neque ligula. Suspendisse potenti. Fusce vel nisl quis dolor efficitur porttitor.</p><a class=product-link href=#>Læs mere ›</a>
+				</div><img alt="Echinaforce sirup emballage" src=img/echina-sirup.png>
+				<div class="product-caption-wrapper md-hide">
+					<h3 class=product-heading>Hot Drink</h3>
+					<p class=product-caption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet neque ligula. Suspendisse potenti. Fusce vel nisl quis dolor efficitur porttitor.</p><a class=product-link href=#>Læs mere ›</a>
+				</div>
+			</div>
+			<div class="fade-in product-align-left"><img alt="Echinaforce spray emballage" src=img/echina-spray.png>
+				<div class=product-caption-wrapper>
+					<h3 class=product-heading>Spray</h3>
+					<p class=product-caption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet neque ligula. Suspendisse potenti. Fusce vel nisl quis dolor efficitur porttitor.</p><a class=product-link href=#>Læs mere ›</a>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
